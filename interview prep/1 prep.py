@@ -1,5 +1,9 @@
-num=int(input('enter num'))
-fact=1
-for n in range(1,num+1):
-    fact=fact*n
-print(fact)
+n=int(input('enter'))
+my_sum = 0
+for i in range(1, n):
+   if(n % i == 0):
+      my_sum = my_sum + i
+if (my_sum == n):
+   print("The number is a perfect number")
+else:
+   print("The number is not a perfect number")
